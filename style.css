@@ -1,0 +1,24 @@
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+.parent{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-rows: repeat(6, 1fr);
+  gap:10px 10px;
+  height: 500px;
+
+}
+.parent div{
+  background-color: darkcyan;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top:15px;
+}
+.item1, .item10, .item11{
+  grid-row: span 2;
+  grid-column: span 2;
+}
